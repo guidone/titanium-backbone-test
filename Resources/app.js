@@ -3,6 +3,7 @@ var Backbone = require('backbone');
 var MyApp = {
     View: {},
     Model: {},
+    Collection: {},
     Controller: {},
     API: {
         URL: 'http://localhost:3000',

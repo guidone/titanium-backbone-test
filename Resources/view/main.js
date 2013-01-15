@@ -11,13 +11,18 @@ MyApp.View.Main = Backbone.View.extend({
         this.window.open();
 
         var post = new MyApp.Model.Post();
+        var postList = new MyApp.Collection.PostList();
 
-        post.save(
-            {body: 'moge'}, 
-            {
-                success: function() { alert(post.get('body')); }, 
-                error: function() { alert('error'); }
-            }
-        );
+        post.save({body: 'aiueo'});
+
+        // postList.fetch({
+            // success: function(collection, response, options) { 
+                // collection.each(function(post) {
+                    // alert(post.get('id'));
+                    // alert(post.get('body'));
+                // });
+            // }, 
+            // error: function() { alert('error'); }
+        // });
     }
 });
